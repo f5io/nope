@@ -36,7 +36,7 @@ func addObserver(values: Options) -> Void {
   NSWorkspace.shared()
     .notificationCenter
     .addObserver(
-      forName: NSNotification.Name.NSWorkspaceDidActivateApplication,
+      forName: NSNotification.Name.NSWorkspaceWillLaunchApplication,
       object: nil, queue: nil,
       using: createHandler(values: values))
 }
