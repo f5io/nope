@@ -9,6 +9,3 @@ url="https://github.com/f5io/nope/releases/download/$version/nope.tar.gz"
 echo "👌  fetching binary for nope $version"
 curl -sL $url | tar -zxf - -C /usr/local/bin
 echo "🎉  successfully installed nope $version"
-
-
-
