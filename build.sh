@@ -2,7 +2,7 @@
 
 set -e
 
-: ${VERSION:=1.0.0}
+: ${VERSION:=1.0.1}
 
 dir=$(cd $(dirname $0) && pwd)
 
