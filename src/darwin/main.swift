@@ -46,6 +46,6 @@ func start(values: Options) {
   addObserver(values: values)
 }
 
+setbuf(__stdoutp, nil);
 start(values: CommandLine.arguments.dropFirst())
-
 RunLoop.main.run()
