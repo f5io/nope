@@ -7,7 +7,7 @@ set -e
 dir=$(cd $(dirname $0) && pwd)
 
 echo "👌  compiling binary (darwin) for nope $VERSION"
-swiftc $dir/src/darwin/main.swift -o $dir/bin/darwin/nope
+swiftc $dir/src/darwin/main.swift -static-stdlib -o $dir/bin/darwin/nope
 echo "⚡  compressing binary (darwin) for nope $VERSION"
 tar -zcf $dir/release/nope-$VERSION-darwin.tar.gz -C $dir/bin/darwin nope
 echo "🎉  sucessfully built (darwin)" 
